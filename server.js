@@ -25,16 +25,16 @@ app.use((req, res, next) => {
 
 //route users
 
-app.use("/api/user", RouterUser);
+app.use("/.netlify/functions/api/user", RouterUser);
 
 //route Products
-app.use("/api/product", RouteProduct);
+app.use("/.netlify/functions/api/product", RouteProduct);
 
 //route Suplier
-app.use("/api/suplier", RouteSuplier);
+app.use("/.netlify/functions/api/suplier", RouteSuplier);
 
 //route add barang masuk
-app.use("/api/barang-masuk", RouteBarangMasuk);
+app.use("/.netlify/functions/api/barang-masuk", RouteBarangMasuk);
 
 var corsOptions = {
   origin: "*",
