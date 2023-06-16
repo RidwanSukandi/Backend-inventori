@@ -28,13 +28,13 @@ app.use((req, res, next) => {
 app.use("api/user", RouterUser);
 
 //route Products
-app.use("api/product", RouteProduct);
+app.use("/api/product", RouteProduct);
 
 //route Suplier
-app.use("api/suplier", RouteSuplier);
+app.use("/api/suplier", RouteSuplier);
 
 //route add barang masuk
-app.use("api/barang-masuk", RouteBarangMasuk);
+app.use("/api/barang-masuk", RouteBarangMasuk);
 
 var corsOptions = {
   origin: "*",
