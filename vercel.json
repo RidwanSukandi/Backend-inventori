@@ -2,30 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "./server.js",
+      "src": "server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/api/user/"
-    },
-    {
-      "src": "/register",
-      "dest": "/api/user/register"
-    },
-    {
-      "src": "/:id",
-      "dest": "/api/user/:id"
-    },
-    {
-      "src": "/update/:id",
-      "dest": "/api/user/update/:id"
-    },
-    {
-      "src": "/delete/:id",
-      "dest": "/api/user/delete/:id"
+      "src": "/(.*)",
+      "dest": "server.js"
     }
   ]
 }
