@@ -26,31 +26,15 @@ app.use((req, res, next) => {
 //route users
 
 app.use("/api/user", RouterUser);
-// app.post("/api/auth/register", createUser);
-// app.get("/api/user", getAllUser);
-// app.get("/api/user/:id", userById);
-// app.put("/api/user/update/:id", updateUser);
-// app.delete("/api/user/delete/:id", removeUser);
 
 //route Products
 app.use("/api/product", RouteProduct);
-// app.post("/api/product", createProduct);
-// app.get("/api/product", getAllProduct);
-// app.put("/api/product/update/:id", updateProduct);
-// app.delete("/api/product/delete/:id", removeProduct);
 
 //route Suplier
-app.use("/api/product", RouteSuplier);
-// app.post("/api/suplier", addNewSuplier);
-// app.get("/api/suplier", getAllSuplier);
-// app.put("/api/suplier/update/:id", updateSuplier);
-// app.delete("/api/suplier/delete/:id", removeSuplier);
+app.use("/api/suplier", RouteSuplier);
 
 //route add barang masuk
 app.use("/api/barang-masuk", RouteBarangMasuk);
-// app.post("/api/barang-masuk", addBarangMasuk);
-// app.get("/api/barang-masuk", getBarangMasuk);
-// app.delete("/api/barang-masuk/delete/:id", deleteBarangMasuk);
 
 var corsOptions = {
   origin: "*",
