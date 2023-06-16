@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 
 //route users
 
-app.use("api/user", RouterUser);
+app.use("/api/user", RouterUser);
 
 //route Products
 app.use("/api/product", RouteProduct);
