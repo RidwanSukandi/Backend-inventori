@@ -25,16 +25,16 @@ app.use((req, res, next) => {
 
 //route users
 
-app.use("/api/user", RouterUser);
+app.use("/api/user", RouterUser, cors());
 
 //route Products
-app.use("/api/product", RouteProduct);
+app.use("/api/product", RouteProduct, cors());
 
 //route Suplier
-app.use("/api/suplier", RouteSuplier);
+app.use("/api/suplier", RouteSuplier, cors());
 
 //route add barang masuk
-app.use("/api/barang-masuk", RouteBarangMasuk);
+app.use("/api/barang-masuk", RouteBarangMasuk, cors());
 
 var corsOptions = {
   origin: "*",
