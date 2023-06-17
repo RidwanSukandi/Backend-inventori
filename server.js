@@ -46,9 +46,7 @@ var corsOptions = {
 app.use(cors(corsOptions));
 
 mongoose
-  .connect(
-    "mongodb+srv://ridwansukandi17:xPSHfX0YkxLr0JlF@backend-inventori.fqltvhg.mongodb.net/"
-  )
+  .connect("mongodb://127.0.0.1:27017/inventori")
   .then(() => {
     console.log("koneksi berhasil");
   })
